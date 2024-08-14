@@ -1,0 +1,19 @@
+.AddUser {
+    background-color: #fff;
+    width: 35%;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .AddUserForm .inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-block: 20px;
+  }
+  
+  .AddUserForm .inputGroup input {
+    padding: 10px 20px;
+  }
+  
