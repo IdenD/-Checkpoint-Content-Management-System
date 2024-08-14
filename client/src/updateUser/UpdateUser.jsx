@@ -23,7 +23,7 @@ export const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .get(`https://mern-contact-api.onrender.com/api/user/${id}`)
+      .get(`https://checkpoint-content-management-system-indol.vercel.app/api/user/${id}`)
       .then((res) => {
         setUser(res.data);
       })
@@ -35,7 +35,7 @@ export const UpdateUser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`https://mern-contact-api.onrender.com/api/update/user/${id}`, user)
+      .put(`https://checkpoint-content-management-system-indol.vercel.app/api/update/user/${id}`, user)
       // eslint-disable-next-line no-unused-vars
       .then((res) => {
         toast.success(res.data.message, { position: "top-right" });

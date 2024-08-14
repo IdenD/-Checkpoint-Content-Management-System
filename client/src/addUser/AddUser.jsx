@@ -23,7 +23,7 @@ export const AddUser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("https://mern-contact-api.onrender.com/api/user", user)
+      .post("https://checkpoint-content-management-system-indol.vercel.app/api/user", user)
       // eslint-disable-next-line no-unused-vars
       .then((res) => {
         toast.success(res.data.message, {position: "top-right"});

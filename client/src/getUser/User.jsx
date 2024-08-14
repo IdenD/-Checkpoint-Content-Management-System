@@ -9,7 +9,7 @@ export const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://mern-contact-api.onrender.com/api/users");
+        const response = await axios.get("https://checkpoint-content-management-system-indol.vercel.app/api/users");
         setUsers(response.data);
       } catch (error) {
         console.log("Erreur de récupération de données", error);
@@ -20,7 +20,7 @@ export const User = () => {
 
   const deleteUser = async (userId) => {
     await axios
-      .delete(`https://mern-contact-api.onrender.com/api/delete/user/${userId}`)
+      .delete(`https://checkpoint-content-management-system-indol.vercel.app/api/delete/user/${userId}`)
       .then((res) => {
         setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
         toast.success(res.data.message, { position: "top-right" });
